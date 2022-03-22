@@ -1,0 +1,102 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    
+}
+.basket{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin: 20px;
+    
+}
+.basket h3{
+    font-size: 40px;
+}
+.basket i{
+    font-size: 40px;
+}
+.basket-form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.product{
+    display: grid;
+    grid-template-columns: auto auto;
+    border: 1px solid rgb(230, 230, 230);
+    box-shadow: 5px 0px 10px #888888;
+    padding: 10px;
+    border-radius: 5px;
+}
+.img1 img{
+    width: 50px;
+}
+.detail h3,p{
+    margin-left: 20px;
+}
+.one{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.products{
+    display: grid;
+    grid-template-rows: auto;
+    row-gap: 10px;
+    margin: 10px;
+}
+.minus{
+    border: 1px solid #000;
+    border-radius: 50%;
+    background-color: #000;
+    color: #fff;
+}
+.note{
+    background-color: #fff9ec;
+    border-left:5px solid #fed502;
+    padding: 10px;
+    margin: 20px;
+  }
+  .basket-form a{
+text-decoration: none;
+color: rgb(0, 162, 255);
+  }
+  .form-buy{
+    border: 1px solid rgb(230, 230, 230);
+    box-shadow: 5px 0px 10px #888888;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  .form-buy button{
+    background-color: #d40b0e;
+    padding: 10px;
+    width: 300px;
+    border: 1px solid #d40b0e;
+    color: #fff;
+    font-weight: bold;
+    margin: 10px;
+    
+    border-radius: 5px;
+    box-shadow: 1px 0px 10px #888888;
+  }
+  .price{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin: 10px;
+  }
+  .terms{
+      margin-top: 40px;
+  }
+  .numberinput{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+  }
+  .quantity{
+      margin-top: 20px;
+  }
+  .quantity input{
+      padding: 10px;
+  }
