@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=, initial-scale=1.0">
-   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="public/css/style.css">
    <link rel="stylesheet" href="css/checkout-style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>book website</title>
@@ -70,7 +70,7 @@
           <span>Are you have account? <a href="index.html" style="text-decoration: none; color: #1b8bbb;">login</a></span>
       </form>
     </div>
-     <div class="head"> <i class="fa fa-star"> </i>&nbsp;<a href="index.html" style="text-decoration: none;  color: #42526e;">  <li>home</li></a></div>
+     <div class="head"> <i class="fa fa-star"> </i>&nbsp;<a href="main.php" style="text-decoration: none;  color: #42526e;">  <li>home</li></a></div>
      <div class="head"> <i class="fa fa-truck"></i> &nbsp;<li>about us </li></div> 
     <div class="head"> <i class="fa fa-phone"> </i>&nbsp;<li>contuct us </li> </div> 
      <div class="head"><i class="fa fa-info-circle"></i> &nbsp;<li>help</li></div>  
