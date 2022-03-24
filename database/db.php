@@ -6,7 +6,7 @@ $password = '';
 
 class Database
 {
-  private $conn;
+  private $conn;                 
   private $select_query;
   
 
