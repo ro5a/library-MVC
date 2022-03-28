@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=, initial-scale=1.0">
-   <link rel="stylesheet" href="public/css/style.css">
-   <link rel="stylesheet" href="css/checkout-style.css">
+   <link rel="stylesheet" href="./public/css/style.css">
+   <link rel="stylesheet" href="./public/css/checkout-style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>book website</title>
     <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous">
