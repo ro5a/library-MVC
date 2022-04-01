@@ -1,7 +1,8 @@
 <?php
 namespace coding\app\controllers;
 class UsersController{
-    public function show(){
-        
+    public static function show(){
+        echo "inside show user";
+
     }
 }
