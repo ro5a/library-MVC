@@ -10,6 +10,7 @@ class OffersController extends Controller{
     public function create(){
         $books=new Book();
         $categories=new Category();
+        $offers =new Offer();
         $allCategoires=$categories->getAll();
         $allbooks=$books->getAll();
         $viewConent=array('books'=>$allbooks,'categories'=>$allCategoires);
@@ -18,10 +19,21 @@ class OffersController extends Controller{
 
     public function store(){
         if(isset($_POST['selected_books'])){
-            $books=implode(",",$_POST['selected_boos']);
+            $books=implode(",",$_POST['selected_books']);
 
         }
         print_r($_POST);
+    }
+    function listAll($parameters=null){
+
+        $parameters['status'];
+        $books=new Book();
+        $categories=new Category();
+        $allCategoires=$categories->getAll();
+        //print_r($allCategories);
+
+        $this->view('list_offers',$allCategoires);
+
     }
    public  function create_offer(){
     $this->view('add_offer');

@@ -590,8 +590,8 @@
       <table class="table table-bordered">
         <thead>
           <tr>
-            <th> Name of category</th>
-            <th>Image</th>
+            <th> Name of offer</th>
+            <th>date of offer</th>
             <th>Status</th>
             
             <th>Action</th>
@@ -600,12 +600,12 @@
         <tbody>
        
          
-         <?php foreach($params as $category){?>
+         <?php foreach($params as $offer){?>
           <tr>
             
-            <td><?= $category['name'];?></td>
+            <td><?= $offer['title'];?></td>
             <td>
-              <img class="img-fluid rounded" height="150px" width="150px" src="images/<?= $category['image'];?>">
+            <?= $offer['start_date'];?>
             </td>
             <td>
             <?php if($offer['is_active']==1) {?>    
