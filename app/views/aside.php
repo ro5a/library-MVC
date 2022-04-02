@@ -131,7 +131,7 @@
   </a>
 </li>
 <li class="menu-item">
-  <a href="#" class="menu-link">
+  <a href="/books" class="menu-link">
     <div>books list </div>
   </a>
 </li>

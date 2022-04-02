@@ -543,7 +543,7 @@
           <div class="container-xxl flex-grow-1 container-p-y">
             
             
-<h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">New</span> Book</h4>
+<h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">New</span> books</h4>
 
 
 
@@ -551,7 +551,7 @@
 <!-- Multi Column with Form Separator -->
 <div class="card mb-4">
   <h5 class="card-header">Create new Book</h5>
-  <form class="card-body" action="/save_book" method="POST" enctype="multipart/form-data">
+  <form class="card-body" action="/save_books" method="POST" enctype="multipart/form-data">
     
     <div class="row g-3">
       <div class="col-md-6">
@@ -564,7 +564,33 @@
           <input  name="image" type="file"  class="form-control"  aria-describedby="multicol-email2" />
           
         </div>
+
       </div>
+      <div class="col-md-6">
+        <label class="form-label" for="multicol-email">description</label>
+        <div class="input-group input-group-merge">
+         <textarea name="description" id="description" cols="20" rows="5" class="form-control" aria-describedby="multicol-email2"></textarea>
+          
+        </div>
+
+      </div>
+      <div class="col-md-6">
+        <label class="form-label" for="multicol-email">price</label>
+        <div class="input-group input-group-merge">
+       <input type="number" name="price" id=""class="form-control" aria-describedby="multicol-email2" placeholder="$">
+          
+        </div>
+       
+      <div class="col-md-6">
+        <label class="form-label" for="multicol-email">pages numbers</label>
+        <div class="input-group input-group-merge">
+       <input type="number" name="numbers" id=""class="form-control" aria-describedby="multicol-email2" >
+          
+        </div>
+        
+
+      </div>
+      
       
       <div class="col-md-6">
         <div class="form-password-toggle">

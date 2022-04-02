@@ -42,7 +42,10 @@ class BooksController extends Controller{
         print_r($_FILES);
         $books=new Book();
         
-        $books->name=$_POST['books_name'];
+        $books->title=$_POST['book_name'];
+        $books->description=$_POST['description'];
+        $books->price=$_POST['price'];
+        $books->pages_number=$_POST['numbers'];
         $imageName=$this->uploadFile($_FILES['image']);
 
         $books->image=$imageName!=null?$imageName:"default.png";
