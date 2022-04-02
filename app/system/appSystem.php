@@ -1,21 +1,33 @@
 <?php
-namespace coding\app\system; 
+namespace coding\app\system;
+
+use Dotenv\Dotenv;
+
 class AppSystem{
-  public Request $request; 
-  public Response $response;
-  public Router $router;
-
-   function __construct()
-  {
+    public Request $request;
+    public Response $response;
+    public Router $router;
+    public static AppSystem $appSystem;
+    public Database $database;
     
-    $this->request=new Request();
-    $this->response=new Response();
-    $this->router=new Router($this->request);
-      
+    function __construct(array $dbConfig)
+    {
 
-  } 
-  public function start(){
-    $this->router->executeRoute();
-  }
+        
+    	$this->database=new Database($dbConfig);
+        self::$appSystem=$this;
+        $this->request=new Request();
+        $this->response=new Response();
+        $this->router=new Router($this->request);
+
+    } 
+    
+    public function start(){
+        $this->router->executeRoute();
+        
+
+    }
+    
 }
+
 ?>

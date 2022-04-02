@@ -9,19 +9,19 @@ class Request{
   public function getRequestMethod(){
       return $_SERVER["REQUEST_METHOD"];
   }
+/*
+    public function checkRequest(){
 
-    // public function checkRequest(){
-
-    //     $url=$_SERVER['REQUEST_URI'];
-    //     $method=$_SERVER['REQUEST_METHOD'];
+        $url=$_SERVER['REQUEST_URI'];
+        $method=$_SERVER['REQUEST_METHOD'];
        
 
-    //     Router::executeRoute($method,$url);
+        //Router::executeRoute($method,$url);
 
         
-    //     }
+        }
 
-
+*/
         
     
 

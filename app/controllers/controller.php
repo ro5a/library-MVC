@@ -1,15 +1,15 @@
 <?php
+namespace coding\app\controllers;
 
-class Controller {
-    public function model($model_name){
-        require_once 'app/models/'.$model_name.'.php';
+use coding\app\system\AppSystem;
+use coding\app\system\Request;
+use coding\app\system\Router;
 
-        return new $model_name();
-    }
+class Controller{
 
-    public function view($view_name,$data=null){
+   function view($viewName,$params=[]){
+       AppSystem::$appSystem->router->view($viewName,$params);
+   }
 
-        require_once 'app/views/'.$view_name.'.php';
-
-    }
 }
+?>
