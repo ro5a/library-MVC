@@ -25,7 +25,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
 
-    <title> Vertical Layouts - Forms | Sneat - Bootstrap 5 HTML Admin Template - Pro</title>
+    <title>dashboard</title>
     
     <meta name="description" content="Most Powerful &amp; Comprehensive Bootstrap 5 HTML Admin Dashboard Template built for developers!" />
     <meta name="keywords" content="dashboard, bootstrap 5 dashboard, bootstrap 5 design, bootstrap 5">
@@ -154,39 +154,7 @@
 
         <ul class="navbar-nav flex-row align-items-center ms-auto">
           
-          <!-- Language -->
-          <li class="nav-item dropdown-language dropdown me-2 me-xl-0">
-            <a class="nav-link dropdown-toggle hide-arrow" href="javascript:void(0);" data-bs-toggle="dropdown">
-              <i class='flag-icon flag-icon-us flag-icon-squared rounded-circle fs-3 me-1'></i>
-            </a>
-            <ul class="dropdown-menu dropdown-menu-end">
-              <li>
-                <a class="dropdown-item" href="javascript:void(0);" data-language="en">
-                  <i class="flag-icon flag-icon-us flag-icon-squared rounded-circle fs-4 me-1"></i>
-                  <span class="align-middle">English</span>
-                </a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="javascript:void(0);" data-language="fr">
-                  <i class="flag-icon flag-icon-fr flag-icon-squared rounded-circle fs-4 me-1"></i>
-                  <span class="align-middle">France</span>
-                </a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="javascript:void(0);" data-language="de">
-                  <i class="flag-icon flag-icon-de flag-icon-squared rounded-circle fs-4 me-1"></i>
-                  <span class="align-middle">German</span>
-                </a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="javascript:void(0);" data-language="pt">
-                  <i class="flag-icon flag-icon-pt flag-icon-squared rounded-circle fs-4 me-1"></i>
-                  <span class="align-middle">Portuguese</span>
-                </a>
-              </li>
-            </ul>
-          </li>
-          <!--/ Language -->
+      
 
 
           
@@ -577,29 +545,29 @@
           <div class="container-xxl flex-grow-1 container-p-y">
             
             
-<h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">Forms/</span> Vertical Layouts</h4>
+<h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">new</span> Offers</h4>
 
 
 
 
 <!-- Multi Column with Form Separator -->
 <div class="card mb-4">
-  <h5 class="card-header">انشاء   عرض  جديد</h5>
+  <h5 class="card-header">     create new offer</h5>
   <form class="card-body" action="/save_offer" method="POST" enctype="multipart/form-data">
     
     <div class="row g-3">
       <div class="col-md-6">
-        <label class="form-label" for="multicol-username">اسم العرض</label>
-        <input name="category_name" type="text" id="multicol-username" class="form-control" placeholder="john.doe" />
+        <label class="form-label" for="multicol-username"> name of offers</label>
+        <input name="category_name" type="text" id="multicol-username" class="form-control" placeholder="name of offer" />
       </div>
       <div class="col-md-3">
-        <label class="form-label" for="multicol-email">تاريخ بداية العرض</label>
+        <label class="form-label" for="multicol-email">  start of offer date</label>
         <div class="col-md-10">
             <input class="form-control" type="date" value="2021-06-18" id="html5-date-input" />
           </div>
       </div>
       <div class="col-md-3">
-        <label class="form-label" for="multicol-email">تاريخ نهاية العرض</label>
+        <label class="form-label" for="multicol-email">  end of offer date</label>
         <div class="col-md-10">
             <input class="form-control" type="date" value="2021-06-18" id="html5-date-input" />
           </div>
@@ -611,29 +579,29 @@
 
     <div class="form-check form-check-inline">
               <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" />
-              <label class="form-check-label" for="inlineRadio2">حسب الكتاب</label>
+              <label class="form-check-label" for="inlineRadio2">on book</label>
             </div>
             <div class="form-check form-check-inline">
               <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" />
-              <label class="form-check-label" for="inlineRadio2">حسب القسم</label>
+              <label class="form-check-label" for="inlineRadio2">on category</label>
             </div>
             <div class="form-check form-check-inline">
               <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" />
-              <label class="form-check-label" for="inlineRadio2">الكل</label>
+              <label class="form-check-label" for="inlineRadio2">all</label>
             </div>
 
     </div>
 
 
 
-    <?php 
+    <!-- <?php 
         for($i=0;$i<10;$i++){
             echo "<p class='remove' data-id=$i>click here</p>";
         }
-    ?>
+    ?> -->
     <div class="row g-3">
       <div class="col-md-4">
-        <label class="form-label" for="multicol-username">الكتب المحددة</label>
+        <label class="form-label" for="multicol-username">books specfic</label>
         <div class="row mb-3 select2-primary">
           
           <div class="col-sm-9">
@@ -647,7 +615,7 @@
         </div>
       </div>
       <div class="col-md-4">
-        <label class="form-label" for="multicol-username">الكتب المحددة</label>
+        <label class="form-label" for="multicol-username">books specfic</label>
         <div class="row mb-3 select2-primary">
           
           <div class="col-sm-9">
@@ -666,13 +634,13 @@
         </div>
       </div>
       <div class="col-md-3">
-        <label class="form-label" for="multicol-email">تاريخ بداية العرض</label>
+        <label class="form-label" for="multicol-email">start offer date  </label>
         <div class="col-md-10">
             <input class="form-control" type="date" value="2021-06-18" id="html5-date-input" />
           </div>
       </div>
       <div class="col-md-3">
-        <label class="form-label" for="multicol-email">تاريخ نهاية العرض</label>
+        <label class="form-label" for="multicol-email">end offer date  </label>
         <div class="col-md-10">
             <input class="form-control" type="date" value="2021-06-18" id="html5-date-input" />
           </div>
@@ -680,7 +648,7 @@
       
       <div class="col-md-6">
         <div class="form-password-toggle">
-          <label class="form-label" for="multicol-confirm-password">تفعيل القسم</label>
+          <label class="form-label" for="multicol-confirm-password"> category activate</label>
           <div class="input-group input-group-merge">
           <label class="switch">
               <input name="is_active" value=1 type="checkbox" checked class="switch-input" />

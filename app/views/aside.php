@@ -41,7 +41,7 @@
       </svg>
 
     </span>
-    <span class="app-brand-text demo menu-text fw-bolder ms-2">Sneat</span>
+    <span class="app-brand-text demo menu-text fw-bolder ms-2">Dashboard</span>
   </a>
 
   <a href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto">
@@ -61,92 +61,104 @@
 
 
   <!-- Forms & Tables -->
-  <li class="menu-header small text-uppercase"><span class="menu-header-text">ادارة المستخدمين</span></li>
+  <li class="menu-header small text-uppercase"><span class="menu-header-text"> Users Administration  </span></li>
 
   <li class="menu-item">
   <a href="#" class="menu-link">
-    <div>انشاء مستخدم</div>
+    <div>create user</div>
   </a>
 </li>
 <li class="menu-item">
   <a href="#" class="menu-link">
-    <div>عرض المستخدمين</div>
+    <div>users list </div>
   </a>
 </li>
  
 
 
   <!-- Misc -->
-  <li class="menu-header small text-uppercase"><span class="menu-header-text">ادارة الاقسام والتصنيفات</span></li>
+  <li class="menu-header small text-uppercase"><span class="menu-header-text">  categories Administration</span></li>
   <li class="menu-item">
   <a href="/add_category" class="menu-link">
-    <div>انشاء قسم</div>
+    <div> create category</div>
   </a>
 </li>
 <li class="menu-item">
   <a href="/categories" class="menu-link">
-    <div>عرض الاقسام</div>
+    <div> categories list</div>
+  </a>
+</li>
+<!-- Misc -->
+<li class="menu-header small text-uppercase"><span class="menu-header-text">  offers Administration</span></li>
+  <li class="menu-item">
+  <a href="/add_offer" class="menu-link">
+    <div> create offer</div>
+  </a>
+</li>
+<li class="menu-item">
+  <a href="/offers" class="menu-link">
+    <div> offers list</div>
   </a>
 </li>
   <!-- Misc -->
-  <li class="menu-header small text-uppercase"><span class="menu-header-text">ادارة الطلبات</span></li>
+  <li class="menu-header small text-uppercase"><span class="menu-header-text">Orders Administration</span></li>
   <li class="menu-item">
   <a href="#" class="menu-link">
-    <div>طلبات جديدة</div>
+    <div> New orders</div>
   </a>
 </li>
 <li class="menu-item">
   <a href="#" class="menu-link">
-    <div>طلبات مكتملة</div>
+    <div> Incomplete Order</div>
   </a>
 </li>
 
 <li class="menu-item">
   <a href="#" class="menu-link">
-    <div>طلبات قيد المعالجة </div>
+    <div>  Processing orders </div>
   </a>
 </li>
 <li class="menu-item">
   <a href="#" class="menu-link">
-    <div>طلبات ملغية</div>
+    <div> cancled orders</div>
   </a>
 </li>
   <!-- Misc -->
-  <li class="menu-header small text-uppercase"><span class="menu-header-text">ادارة الكتب/span></li>
+  <li class="menu-header small text-uppercase"><span class="menu-header-text">Books Administration</li>
   <li class="menu-item">
   <a href="#" class="menu-link">
-    <div>اضافة كتاب</div>
+    <div>Create book</div>
   </a>
 </li>
 <li class="menu-item">
   <a href="#" class="menu-link">
-    <div>عرض الكتب</div>
+    <div>books list </div>
   </a>
 </li>
    <!-- Misc -->
-   <li class="menu-header small text-uppercase"><span class="menu-header-text">ادارة طرق الدفع</span></li>
+   <li class="menu-header small text-uppercase"><span class="menu-header-text"> payment method Administration  </span></li>
    <li class="menu-item">
   <a href="#" class="menu-link">
-    <div>اضافة طريقة </div>
+    <div>create payment method </div>
   </a>
 </li>
 <li class="menu-item">
   <a href="#" class="menu-link">
-    <div>عرض الطرق</div>
+    <div>payment method list </div>
   </a>
 </li>
 
 
    <!-- Misc -->
-   <li class="menu-header small text-uppercase"><span class="menu-header-text">ادارة  الدفع</span></li>
+   <li class="menu-header small text-uppercase"><span class="menu-header-text"> Payment Administration  </span></li>
    <li class="menu-item">
   <a href="#" class="menu-link">
-    <div>اضافة طريقة </div>
+    <div> create payment </div>
   </a>
 </li>
 <li class="menu-item">
   <a href="#" class="menu-link">
-    <div>عرض الطرق</div>
+    <div> payment list</div>
   </a>
 </li>
 </ul>

@@ -153,41 +153,7 @@
         
 
         <ul class="navbar-nav flex-row align-items-center ms-auto">
-          
-          <!-- Language -->
-          <li class="nav-item dropdown-language dropdown me-2 me-xl-0">
-            <a class="nav-link dropdown-toggle hide-arrow" href="javascript:void(0);" data-bs-toggle="dropdown">
-              <i class='flag-icon flag-icon-us flag-icon-squared rounded-circle fs-3 me-1'></i>
-            </a>
-            <ul class="dropdown-menu dropdown-menu-end">
-              <li>
-                <a class="dropdown-item" href="javascript:void(0);" data-language="en">
-                  <i class="flag-icon flag-icon-us flag-icon-squared rounded-circle fs-4 me-1"></i>
-                  <span class="align-middle">English</span>
-                </a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="javascript:void(0);" data-language="fr">
-                  <i class="flag-icon flag-icon-fr flag-icon-squared rounded-circle fs-4 me-1"></i>
-                  <span class="align-middle">France</span>
-                </a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="javascript:void(0);" data-language="de">
-                  <i class="flag-icon flag-icon-de flag-icon-squared rounded-circle fs-4 me-1"></i>
-                  <span class="align-middle">German</span>
-                </a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="javascript:void(0);" data-language="pt">
-                  <i class="flag-icon flag-icon-pt flag-icon-squared rounded-circle fs-4 me-1"></i>
-                  <span class="align-middle">Portuguese</span>
-                </a>
-              </li>
-            </ul>
-          </li>
-          <!--/ Language -->
-
+         
 
           
 
@@ -577,23 +543,23 @@
           <div class="container-xxl flex-grow-1 container-p-y">
             
             
-<h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">Forms/</span> Vertical Layouts</h4>
+<h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">New</span> Category</h4>
 
 
 
 
 <!-- Multi Column with Form Separator -->
 <div class="card mb-4">
-  <h5 class="card-header">انشاء قسم جديد</h5>
+  <h5 class="card-header">Create new Category</h5>
   <form class="card-body" action="/save_category" method="POST" enctype="multipart/form-data">
     
     <div class="row g-3">
       <div class="col-md-6">
-        <label class="form-label" for="multicol-username">اسم القسم</label>
+        <label class="form-label" for="multicol-username">Name of Category </label>
         <input name="category_name" type="text" id="multicol-username" class="form-control" placeholder="john.doe" />
       </div>
       <div class="col-md-6">
-        <label class="form-label" for="multicol-email">صورة القسم</label>
+        <label class="form-label" for="multicol-email">Image</label>
         <div class="input-group input-group-merge">
           <input  name="image" type="file"  class="form-control"  aria-describedby="multicol-email2" />
           
@@ -602,7 +568,7 @@
       
       <div class="col-md-6">
         <div class="form-password-toggle">
-          <label class="form-label" for="multicol-confirm-password">تفعيل القسم</label>
+          <label class="form-label" for="multicol-confirm-password">Category activate</label>
           <div class="input-group input-group-merge">
           <label class="switch">
               <input name="is_active" value=1 type="checkbox" checked class="switch-input" />

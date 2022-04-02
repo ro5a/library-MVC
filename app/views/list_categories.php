@@ -576,7 +576,7 @@
           <div class="container-xxl flex-grow-1 container-p-y">
 
 
-            <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">Forms/</span> Vertical Layouts</h4>
+            <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">List</span> of categories</h4>
 
            
 
@@ -584,17 +584,17 @@
             <!-- Multi Column with Form Separator -->
             <!-- Bordered Table -->
 <div class="card">
-  <h5 class="card-header">Bordered Table</h5>
+ 
   <div class="card-body">
     <div class="table-responsive text-nowrap">
       <table class="table table-bordered">
         <thead>
           <tr>
-            <th>اسم القسم</th>
-            <th>الصورة</th>
-            <th>الحالة</th>
+            <th> Name of category</th>
+            <th>Image</th>
+            <th>Status</th>
             
-            <th>العمليات</th>
+            <th>Action</th>
           </tr>
         </thead>
         <tbody>
@@ -609,10 +609,10 @@
             </td>
             <td>
             <?php if($category['is_active']==1) {?>    
-            <span class="badge bg-label-success me-1">مفعل</span>
+            <span class="badge bg-label-success me-1">active</span>
             <?php }
             else {?>
-             <span class="badge bg-label-danger me-1">موقف</span>
+             <span class="badge bg-label-danger me-1">Un active</span>
             <?php } ?>
             </td>
             <td>
