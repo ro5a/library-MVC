@@ -561,13 +561,13 @@
         <input name="category_name" type="text" id="multicol-username" class="form-control" placeholder="name of offer" />
       </div>
       <div class="col-md-3">
-        <label class="form-label" for="multicol-email">  start of offer date</label>
+        <label class="form-label" for="multicol-email">  start  offer date</label>
         <div class="col-md-10">
             <input class="form-control" type="date" value="2021-06-18" id="html5-date-input" />
           </div>
       </div>
       <div class="col-md-3">
-        <label class="form-label" for="multicol-email">  end of offer date</label>
+        <label class="form-label" for="multicol-email">  end  offer date</label>
         <div class="col-md-10">
             <input class="form-control" type="date" value="2021-06-18" id="html5-date-input" />
           </div>

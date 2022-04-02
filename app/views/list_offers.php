@@ -153,6 +153,39 @@
 
             <ul class="navbar-nav flex-row align-items-center ms-auto">
 
+              <!-- Language -->
+              <li class="nav-item dropdown-language dropdown me-2 me-xl-0">
+                <a class="nav-link dropdown-toggle hide-arrow" href="javascript:void(0);" data-bs-toggle="dropdown">
+                  <i class='flag-icon flag-icon-us flag-icon-squared rounded-circle fs-3 me-1'></i>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end">
+                  <li>
+                    <a class="dropdown-item" href="javascript:void(0);" data-language="en">
+                      <i class="flag-icon flag-icon-us flag-icon-squared rounded-circle fs-4 me-1"></i>
+                      <span class="align-middle">English</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="javascript:void(0);" data-language="fr">
+                      <i class="flag-icon flag-icon-fr flag-icon-squared rounded-circle fs-4 me-1"></i>
+                      <span class="align-middle">France</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="javascript:void(0);" data-language="de">
+                      <i class="flag-icon flag-icon-de flag-icon-squared rounded-circle fs-4 me-1"></i>
+                      <span class="align-middle">German</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="javascript:void(0);" data-language="pt">
+                      <i class="flag-icon flag-icon-pt flag-icon-squared rounded-circle fs-4 me-1"></i>
+                      <span class="align-middle">Portuguese</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <!--/ Language -->
 
 
 
@@ -575,7 +608,7 @@
               <img class="img-fluid rounded" height="150px" width="150px" src="images/<?= $category['image'];?>">
             </td>
             <td>
-            <?php if($category['is_active']==1) {?>    
+            <?php if($offer['is_active']==1) {?>    
             <span class="badge bg-label-success me-1">active</span>
             <?php }
             else {?>
@@ -583,7 +616,7 @@
             <?php } ?>
             </td>
             <td>
-            <a href="/edit_category/<?php echo $category['id'];?>" class="btn btn-icon btn-outline-dribbble">
+            <a href="/edit_category/<?php echo $offer['id'];?>" class="btn btn-icon btn-outline-dribbble">
                 <i class="tf-icons bx bx-edit-alt me-1"></i>
               </a>
               <button type="button" class="btn btn-icon btn-outline-dribbble">

@@ -55,7 +55,7 @@ Router::post('/update_category',[CategoriesController::class,'update']);
 /** offer routes  */
 
 Router::get('/offers',[OffersController::class,'listAll']);
-Router::get('/add_offer',[OffersController::class,'create']);
+Router::get('/add_offer',[OffersController::class,'create_offer']);
 Router::get('/edit_offer/{id}',[OffersController::class,'edit']);
 Router::get('/remove_offer/{id}/{name}',[OffersController::class,'remove']);
 Router::post('/save_offer',[OffersController::class,'store']);

@@ -23,5 +23,9 @@ class OffersController extends Controller{
         }
         print_r($_POST);
     }
+   public  function create_offer(){
+    $this->view('add_offer');
+
+}
 }
 ?>
