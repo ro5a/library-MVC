@@ -580,6 +580,9 @@
             <?= $author['phone'];?>
             </td>
             <td>
+            <?= $author['bio'];?>
+            </td>
+            <td>
             <?php if($author['is_active']==1) {?>    
             <span class="badge bg-label-success me-1">active</span>
             <?php }

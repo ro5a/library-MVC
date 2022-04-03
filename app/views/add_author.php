@@ -579,7 +579,7 @@
           <label class="form-label" for="multicol-password">Enter your bio</label>
           <div class="input-group input-group-merge">
            <textarea name="bio" type="text" id="" cols="30" rows="5" class="form-control">bio</textarea>
-            <span class="input-group-text cursor-pointer" id="multicol-phone2"><i class="bx bx-hide"></i></span>
+          
           </div>
           
         </div>

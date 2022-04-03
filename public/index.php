@@ -1,7 +1,6 @@
 <?php
 require_once __DIR__ . '/../vendor/autoload.php';
 
-use coding\app\controllers\AuthorsController;
 use coding\app\controllers\CategoriesController;
 use coding\app\controllers\OffersController;
 use coding\app\controllers\PublishersController;
@@ -13,6 +12,8 @@ use coding\app\controllers\CheckoutController;
 use coding\app\controllers\SteperController;
 use coding\app\controllers\DetailsController;
 use coding\app\controllers\OrderController;
+use coding\app\controllers\AuthorsController;
+
 
 
 use Dotenv\Dotenv;
@@ -43,10 +44,10 @@ Router::get('/details',[DetailsController::class, 'details']);
 // Authers Routes
 Router::get('/author_page',[AuthorsController::class,'view_page']);
 Router::get('/authors',[ AuthorsController::class,'listAll']);
-Router::get('/add_author',[AuthorsController::class,'create']);
+Router::get('/add_author',[AuthorsController::class,'newAuther']);
 Router::get('/edit_author/{id}',[ AuthorsController::class,'edit']);
 Router::get('/remove_author/{id}/{name}',[ AuthorsController::class,'remove']);
-Router::post('/save_author',[ AuthorsController::class,'store']);
+Router::post('/save_author',[ AuthorsController::class,'saveAuthor']);
 Router::post('/update_author',[AuthorsController::class,'update']);
 // users Routes
 Router::get('/user_page',[UsersController::class,'view_page']);
