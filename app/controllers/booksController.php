@@ -60,14 +60,31 @@ class BooksController extends Controller{
         $cat=new Book();
         $result=$cat->getSingleRow($params['id']);
         $this->view('edit_books',$result);
+      
         
 
     }
     function update(){
+        $books=new Book();
+
+        $books->title=$_POST['title'];
+       $imageName=$this->uploadFile($_FILES['image']);
+
+       $books->image=$imageName!=null?$imageName:"default.png";
+       $books->description=$_POST['description'];
+       $books->price=$_POST['price'];
+       $books->pages_number=$_POST['pages_number'];
+
+       $books->created_by=1;
+       $books->is_active=1;
+
+       $books->update();
 
     }
     public function remove($params=[]){
         echo "remove function";
+        $books=new Book();
+        $books->changeStatus($params['id']);
 
     }
 

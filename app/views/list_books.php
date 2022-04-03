@@ -590,7 +590,7 @@
             <?php } ?>
             </td>
             <td>
-            <a href="/edit_category/<?php echo $book['id'];?>" class="btn btn-icon btn-outline-dribbble">
+            <a href="/edit_books/<?php echo $book['id'];?>" class="btn btn-icon btn-outline-dribbble">
                 <i class="tf-icons bx bx-edit-alt me-1"></i>
               </a>
               <button type="button" class="btn btn-icon btn-outline-dribbble">
