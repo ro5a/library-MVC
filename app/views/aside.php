@@ -64,13 +64,27 @@
   <li class="menu-header small text-uppercase"><span class="menu-header-text"> Users Administration  </span></li>
 
   <li class="menu-item">
-  <a href="#" class="menu-link">
+  <a href="/new_user" class="menu-link">
     <div>create user</div>
   </a>
 </li>
 <li class="menu-item">
-  <a href="#" class="menu-link">
+  <a href="/users" class="menu-link">
     <div>users list </div>
+  </a>
+</li>
+ 
+
+<li class="menu-header small text-uppercase"><span class="menu-header-text"> Authors Administration  </span></li>
+
+  <li class="menu-item">
+  <a href="/add_author" class="menu-link">
+    <div>create author</div>
+  </a>
+</li>
+<li class="menu-item">
+  <a href="/authors" class="menu-link">
+    <div>author list </div>
   </a>
 </li>
  

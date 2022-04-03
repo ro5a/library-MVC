@@ -42,8 +42,22 @@ Router::get('/checkout',[CheckoutController::class,'checkout_page']);
 Router::get('/steper',[SteperController::class,'steper']);
 // checkout Routes
 Router::get('/details',[DetailsController::class, 'details']);
-
-
+// Authers Routes
+Router::get('/author_page',[AuthorsController::class,'view_page']);
+Router::get('/authors',[ AuthorsController::class,'listAll']);
+Router::get('/add_author',[AuthorsController::class,'create']);
+Router::get('/edit_author/{id}',[ AuthorsController::class,'edit']);
+Router::get('/remove_author/{id}/{name}',[ AuthorsController::class,'remove']);
+Router::post('/save_author',[ AuthorsController::class,'store']);
+Router::post('/update_author',[AuthorsController::class,'update']);
+// users Routes
+Router::get('/user_page',[UsersController::class,'view_page']);
+Router::get('/users',[ UsersController::class,'listAll']);
+Router::get('/new_user',[ UsersController::class,'newUser']);
+Router::get('/edit_user/{id}',[ UsersController::class,'edit']);
+Router::get('/remove_user/{id}/{name}',[ UsersControllerr::class,'remove']);
+Router::post('/save_user',[ UsersController::class,'saveUser']);
+Router::post('/update_user',[ UsersController::class,'update']);
 // categories Routes
 Router::get('/category_page',[CategoriesController::class,'view_page']);
 Router::get('/categories',[CategoriesController::class,'listAll']);

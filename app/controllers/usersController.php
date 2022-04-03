@@ -5,12 +5,14 @@ use coding\app\models\User;
 
 class UsersController extends Controller{
 
-    function signup_page(){
-        $this->view('signup');
+    function listAll($parameters=null){
 
-    } 
-     function login_page(){
-        $this->view('login');
+        
+        $users=new User();
+        $allUsers=$users->getAll();
+        
+
+        $this->view('list_users',$allUsers);
 
     }
 
@@ -19,7 +21,7 @@ class UsersController extends Controller{
     }
 
         public function show(){
-            $this->view('list_categories');
+            $this->view('list_users');
 
     }
 
@@ -45,8 +47,12 @@ class UsersController extends Controller{
         $this->view("new_user");
     }
 
-    public function delete(){
-        
+    function update(){
+
+    }
+    public function remove($params=[]){
+        echo "remove function";
+
     }
 
 

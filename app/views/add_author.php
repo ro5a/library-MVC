@@ -25,7 +25,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
 
-    <title>dashboard</title>
+    <title> Vertical Layouts - Forms | Sneat - Bootstrap 5 HTML Admin Template - Pro</title>
     
     <meta name="description" content="Most Powerful &amp; Comprehensive Bootstrap 5 HTML Admin Dashboard Template built for developers!" />
     <meta name="keywords" content="dashboard, bootstrap 5 dashboard, bootstrap 5 design, bootstrap 5">
@@ -95,13 +95,11 @@
 
 
 
-  
-  
-      <!-- Menu -->
+<!-- Menu -->
+<?php include("aside.php");?>
+<!-- / Menu -->
 
-      <?php include("aside.php");?>
-      <!-- / Menu -->
-
+    
 
     <!-- Layout container -->
     <div class="layout-page">
@@ -142,7 +140,7 @@
           <div class="nav-item navbar-search-wrapper mb-0">
             <a class="nav-item nav-link search-toggler px-0" href="javascript:void(0);">
               <i class="bx bx-search bx-sm"></i>
-              <span class="d-none d-md-inline-block text-muted">Search (Ctrl+/)</span>
+              <span class="d-none d-md-inline-block text-muted">Search </span>
             </a>
           </div>
         </div>
@@ -154,7 +152,7 @@
 
         <ul class="navbar-nav flex-row align-items-center ms-auto">
           
-      
+        
 
 
           
@@ -545,110 +543,50 @@
           <div class="container-xxl flex-grow-1 container-p-y">
             
             
-<h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">new</span> Offers</h4>
+<h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">new</span> auther</h4>
 
 
 
 
 <!-- Multi Column with Form Separator -->
 <div class="card mb-4">
-  <h5 class="card-header">     create new offer</h5>
-  <form class="card-body" action="/save_offer" method="POST" enctype="multipart/form-data">
+  <h5 class="card-header">Create New Auther</h5>
+  <form class="card-body" action="/save_author" method="POST">
     
     <div class="row g-3">
       <div class="col-md-6">
-        <label class="form-label" for="multicol-username"> name of offers</label>
-        <input name="offer_name" type="text" id="multicol-username" class="form-control" placeholder="name of offer" />
+        <label class="form-label" for="multicol-username">Author_name</label>
+        <input name="auther_name" type="text" id="multicol-username" class="form-control" placeholder="john.doe" />
       </div>
-      <div class="col-md-3">
-        <label class="form-label" for="multicol-email">  start  offer date</label>
-        <div class="col-md-10">
-            <input class="form-control" type="date" value="2021-06-18" id="html5-date-input" />
-          </div>
-      </div>
-      <div class="col-md-3">
-        <label class="form-label" for="multicol-email">  end  offer date</label>
-        <div class="col-md-10">
-            <input class="form-control" type="date" value="2021-06-18" id="html5-date-input" />
-          </div>
-      </div>
-      
-      
-    </div>
-    <div class="row g-3">
-
-    <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" />
-              <label class="form-check-label" for="inlineRadio2">on book</label>
-            </div>
-            <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" />
-              <label class="form-check-label" for="inlineRadio2">on category</label>
-            </div>
-            <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" />
-              <label class="form-check-label" for="inlineRadio2">all</label>
-            </div>
-
-    </div>
-
-
-
-    <!-- <?php 
-        for($i=0;$i<10;$i++){
-            echo "<p class='remove' data-id=$i>click here</p>";
-        }
-    ?> -->
-    <div class="row g-3">
-      <div class="col-md-4">
-        <label class="form-label" for="multicol-username">books specfic</label>
-        <div class="row mb-3 select2-primary">
-          
-          <div class="col-sm-9">
-            <select  name="selected_books[]"disabled id="multicol-language" class="select2 form-select" multiple>
-              <option value="en" selected>English</option>
-              <option value="fr" selected>French</option>
-              <option value="de">German</option>
-              <option value="pt">Portuguese</option>
-            </select>
-          </div>
+      <div class="col-md-6">
+        <label class="form-label" for="multicol-email">Email</label>
+        <div class="input-group input-group-merge">
+          <input  name="email"type="text" id="multicol-email" class="form-control" placeholder="Example" aria-label="john.doe" aria-describedby="multicol-email2" />
+          <span class="input-group-text" id="multicol-email2">@example.com</span>
         </div>
       </div>
-      <div class="col-md-4">
-        <label class="form-label" for="multicol-username">books specfic</label>
-        <div class="row mb-3 select2-primary">
-          
-          <div class="col-sm-9">
-            <select  name="selected_cats" disabled id="multicol-language" class="select2 form-select" multiple>
-             
-    <?php
-    foreach($params['categories'] as $cats){ ?>
-<option value="<?= $cats['id'];?>"><?= $cats['name'] ;?></option>
-
-   <?php  } 
-    ?>
-
-
-            </select>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3">
-        <label class="form-label" for="multicol-email">start offer date  </label>
-        <div class="col-md-10">
-            <input class="form-control" type="date" value="2021-06-18" id="html5-date-input" />
-          </div>
-      </div>
-      <div class="col-md-3">
-        <label class="form-label" for="multicol-email">end offer date  </label>
-        <div class="col-md-10">
-            <input class="form-control" type="date" value="2021-06-18" id="html5-date-input" />
-          </div>
-      </div>
-      
       <div class="col-md-6">
         <div class="form-password-toggle">
-          <label class="form-label" for="multicol-confirm-password"> category activate</label>
+          <label class="form-label" for="multicol-password">Phone</label>
+          <div class="input-group input-group-merge">
+            <input  name="phone" type="text" id="multicol-phone" class="form-control" placeholder="+796" aria-describedby="multicol-phone2" />
+            <span class="input-group-text cursor-pointer" id="multicol-phone2"><i class="bx bx-hide"></i></span>
+          </div>
+          
+        </div>
+        <div class="col-md-6">
+        <div class="form-password-toggle">
+          <label class="form-label" for="multicol-password">Enter your bio</label>
+          <div class="input-group input-group-merge">
+           <textarea name="bio" type="text" id="" cols="30" rows="5" class="form-control">bio</textarea>
+            <span class="input-group-text cursor-pointer" id="multicol-phone2"><i class="bx bx-hide"></i></span>
+          </div>
+          
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="form-password-toggle">
+          <label class="form-label" for="multicol-confirm-password">auther activation</label>
           <div class="input-group input-group-merge">
           <label class="switch">
               <input name="is_active" value=1 type="checkbox" checked class="switch-input" />
@@ -760,16 +698,7 @@
 
   <!-- Page JS -->
   <script src="assets/js/form-layouts.js"></script>
-<script>
-
-    $(document).ready(function(){
-
-
-     
-        
-
-    });
-</script>  
+  
 </body>
 
 

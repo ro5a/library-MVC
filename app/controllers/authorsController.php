@@ -5,16 +5,56 @@ use coding\app\models\AUthor;
 
 class AuthorsController{
 
-    public function createAuthor(){
-        $author=new AUthor();
-        $author->name="ali";
-        $author->phone="77878788";
-        $author->bio="fafdasdfasdfas";
-        $author->email="auth@gmail.com";
-        $author->created_by=1;
-        $author->is_active=1;
-        $author->save();
+   
+    function listAll($parameters=null){
+
+        
+        $authors=new AUthor();
+        $allAuthor=$authors->getAll();
+        
+
+        $this->view('list_authors',$allAuthors);
+
     }
+    function create(){
+        $this->view("add_author");
+
+    }
+
+    function store(){
+        print_r($_POST);
+        print_r($_FILES);
+        $author=new AUthor();
+        
+        $author->name=$_POST['auther_name'];
+        $author->email=$_POST['email'];
+        $author->phone=$_POST['phone'];
+        $author->bio=$_POST['bio'];
+      
+        $author->created_by=1;
+        $author->is_active=$_POST['is_active'];
+
+        $author->save();
+
+    }
+    function edit($params=[]){
+
+        $auth=new AUthor();
+        $result=$auth->getSingleRow($params['id']);
+        $this->view('edit_author',$result);
+        
+
+    }
+    function update(){
+
+    }
+    public function remove($params=[]){
+        echo "remove function";
+
+    }
+
+
+
 
 }
 ?>

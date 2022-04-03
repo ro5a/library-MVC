@@ -18,6 +18,9 @@ class OffersController extends Controller{
     }
 
     public function store(){
+       
+        
+
         if(isset($_POST['selected_books'])){
             $books=implode(",",$_POST['selected_books']);
 
@@ -25,8 +28,10 @@ class OffersController extends Controller{
         print_r($_POST);
     }
     function listAll($parameters=null){
+       
 
-        $parameters['status'];
+        
+        
         $books=new Book();
         $categories=new Category();
         $allCategoires=$categories->getAll();

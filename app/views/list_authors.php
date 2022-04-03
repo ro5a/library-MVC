@@ -153,39 +153,6 @@
 
             <ul class="navbar-nav flex-row align-items-center ms-auto">
 
-              <!-- Language -->
-              <li class="nav-item dropdown-language dropdown me-2 me-xl-0">
-                <a class="nav-link dropdown-toggle hide-arrow" href="javascript:void(0);" data-bs-toggle="dropdown">
-                  <i class='flag-icon flag-icon-us flag-icon-squared rounded-circle fs-3 me-1'></i>
-                </a>
-                <ul class="dropdown-menu dropdown-menu-end">
-                  <li>
-                    <a class="dropdown-item" href="javascript:void(0);" data-language="en">
-                      <i class="flag-icon flag-icon-us flag-icon-squared rounded-circle fs-4 me-1"></i>
-                      <span class="align-middle">English</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="javascript:void(0);" data-language="fr">
-                      <i class="flag-icon flag-icon-fr flag-icon-squared rounded-circle fs-4 me-1"></i>
-                      <span class="align-middle">France</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="javascript:void(0);" data-language="de">
-                      <i class="flag-icon flag-icon-de flag-icon-squared rounded-circle fs-4 me-1"></i>
-                      <span class="align-middle">German</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="javascript:void(0);" data-language="pt">
-                      <i class="flag-icon flag-icon-pt flag-icon-squared rounded-circle fs-4 me-1"></i>
-                      <span class="align-middle">Portuguese</span>
-                    </a>
-                  </li>
-                </ul>
-              </li>
-              <!--/ Language -->
 
 
 
@@ -576,7 +543,7 @@
           <div class="container-xxl flex-grow-1 container-p-y">
 
 
-            <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">List</span> of offers</h4>
+            <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">List</span> of authors</h4>
 
            
 
@@ -590,8 +557,10 @@
       <table class="table table-bordered">
         <thead>
           <tr>
-            <th> Name of offer</th>
-            <th>date of offer</th>
+            <th> Name </th>
+            <th>email</th>
+            <th>phone</th>
+            <th>bio</th>
             <th>Status</th>
             
             <th>Action</th>
@@ -600,15 +569,18 @@
         <tbody>
        
          
-         <?php foreach($params as $offer){?>
+         <?php foreach($params as $author){?>
           <tr>
             
-            <td><?= $offer['title'];?></td>
+            <td><?= $author['name'];?></td>
             <td>
-            <?= $offer['start_date'];?>
+            <?= $author['email'];?>
             </td>
             <td>
-            <?php if($offer['is_active']==1) {?>    
+            <?= $author['phone'];?>
+            </td>
+            <td>
+            <?php if($author['is_active']==1) {?>    
             <span class="badge bg-label-success me-1">active</span>
             <?php }
             else {?>
@@ -616,7 +588,7 @@
             <?php } ?>
             </td>
             <td>
-            <a href="/edit_category/<?php echo $offer['id'];?>" class="btn btn-icon btn-outline-dribbble">
+            <a href="/edit_author/<?php echo $user['id'];?>" class="btn btn-icon btn-outline-dribbble">
                 <i class="tf-icons bx bx-edit-alt me-1"></i>
               </a>
               <button type="button" class="btn btn-icon btn-outline-dribbble">
