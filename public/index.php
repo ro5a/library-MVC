@@ -13,6 +13,7 @@ use coding\app\controllers\SteperController;
 use coding\app\controllers\DetailsController;
 use coding\app\controllers\OrderController;
 use coding\app\controllers\AuthorsController;
+use coding\app\controllers\PayementController;
 
 
 
@@ -93,6 +94,14 @@ Router::get('/remove_orders/{id}/{name}',[OrderController::class,'remove']);
 
 Router::post('/update_orders',[OrderController::class,'update']);
 
+// Payements Routes
+Router::get('/payement_page',[PayementController::class,'view_page']);
+Router::get('/payements',[PayementController::class,'listAll']);
+Router::get('/add_payements',[PayementController::class,'create']);
+Router::get('/edit_payements/{id}',[PayementController::class,'edit']);
+Router::get('/remove_payements/{id}/{name}',[PayementController::class,'remove']);
+Router::post('/save_payements',[PayementController::class,'store']);
+Router::post('/update_payements',[PayementController::class,'update']);
 
 
 /** end of web routes */

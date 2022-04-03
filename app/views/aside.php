@@ -152,12 +152,12 @@
    <!-- Misc -->
    <li class="menu-header small text-uppercase"><span class="menu-header-text"> payment method Administration  </span></li>
    <li class="menu-item">
-  <a href="#" class="menu-link">
+  <a href="/add_payements" class="menu-link">
     <div>create payment method </div>
   </a>
 </li>
 <li class="menu-item">
-  <a href="#" class="menu-link">
+  <a href="/payements" class="menu-link">
     <div>payment method list </div>
   </a>
 </li>

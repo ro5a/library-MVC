@@ -44,9 +44,7 @@ class AuthorsController extends Controller{
 
     }
 
-    public function register(){
-        $this->view("new_user");
-    }
+   
 
     function update(){
 
