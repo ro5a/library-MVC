@@ -4,13 +4,20 @@ namespace coding\app\controllers;
 use coding\app\models\AUthor;
 
 class AuthorsController{
+    function view_page($parameters=null){
+        $authors=new AUthor();
+        $allAuthors=$authors->getAll();
+
+        $this->view('details',$allAuthors);
+
+    }
 
    
     function listAll($parameters=null){
 
         
         $authors=new AUthor();
-        $allAuthor=$authors->getAll();
+        $allAuthors=$authors->getAll();
         
 
         $this->view('list_authors',$allAuthors);

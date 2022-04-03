@@ -12,6 +12,8 @@ use coding\app\controllers\BooksController;
 use coding\app\controllers\CheckoutController;
 use coding\app\controllers\SteperController;
 use coding\app\controllers\DetailsController;
+use coding\app\controllers\OrderController;
+
 
 use Dotenv\Dotenv;
 
@@ -29,11 +31,7 @@ $system=new AppSystem($config);
 
 /** web routes  */
 
-// login Routes
-Router::get('/login',[UsersController::class,'login_page']);
 
-// signup Routes
-Router::get('/signup',[UsersController::class,'signup_page']);
 
 // checkout Routes
 Router::get('/checkout',[CheckoutController::class,'checkout_page']);
@@ -84,6 +82,17 @@ Router::get('/edit_books/{id}',[BooksController::class,'edit']);
 Router::get('/remove_books/{id}/{name}',[BooksController::class,'remove']);
 Router::post('/save_books',[BooksController::class,'store']);
 Router::post('/update_books',[BooksController::class,'update']);
+
+//orders routes
+Router::get('/orders',[OrderController::class, 'listAll']);
+Router::get('/add_orders',[OrderController::class,'create']);
+Router::get('/save_order',[OrderController::class,'store']);
+Router::get('/edit_orders/{id}',[OrderController::class,'edit']);
+Router::get('/remove_orders/{id}/{name}',[OrderController::class,'remove']);
+
+Router::post('/update_orders',[OrderController::class,'update']);
+
+
 
 /** end of web routes */
 
